@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="card-body">
+     
+    <div class="row no-gutters">
+      <div class="col-md-5">
+        <img src="./assets/Images/login.jpg" class="card-img" width="100%" height="100%">
+      </div>
+      <div class="col-md-7">
+         <form [formGroup]="UserLoginForm" novalidate>
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" formControlName="email">
+                </div>
+
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" formControlName="password">
+                </div>
+
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="Check1">
+                  <label class="form-check-label" for="Check1">Remember Me</label>
+                </div>
+                 <button type="submit" class="btn btn-primary" (click)="OnLogin()">Submit</button>
+                 <div>
+                    <a href="register">Create an account</a>  
+                 </div>
+                </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>

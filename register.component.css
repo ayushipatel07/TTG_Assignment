@@ -1,0 +1,14 @@
+.card{
+    margin: 20px 20px 20px 20px;
+    width: 40%;
+    height: 80%;
+    padding: 2% 2% 2% 2%;
+    background-color:lightgray;
+    margin: 0 auto; 
+    float: none;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.col-md-12{
+    max-width: 100%;
+}

@@ -1,0 +1,49 @@
+<div class="card ">
+    <h3 style="text-align: center;">Registration Form</h3>
+    <div class="card-body">
+        
+       <!-- <span ><small class="text-muted" style="text-align: center;" >---------Please Register Yourself---------</small></span> -->
+      <div class="col-md-12">
+         <form [formGroup]="addUsersForm" novalidate>
+                <div class="form-group">
+                  <label for="name1"> Name</label>
+                  <input type="text" class="form-control"  formControlName="Name" id="name1">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" formControlName="address" id="address">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phonenumber">Phone Number</label>
+                    <input type="text" class="form-control" formControlName="phonenumber" id="phonenumber">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="policynumber">Policy Number</label>
+                    <input type="text" class="form-control" formControlName="policynumber" id="policynumber">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="" class="form-control" formControlName="city" id="city">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp" formControlName="email" id="email">
+                  </div>
+  
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" formControlName="password" id="password">
+                  </div> 
+                  <div class="row justify-content-end">              
+                 <button type="submit" class="btn btn-success"  (click)="addUser()">Submit</button>
+                 <button type="submit" class="btn btn-secondary"  (click)="cancel()">Cancel</button>
+                  </div>
+                </form>
+      </div>
+    </div>
+  </div>
